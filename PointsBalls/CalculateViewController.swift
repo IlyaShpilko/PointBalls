@@ -28,9 +28,9 @@ class CalculateViewController: UIViewController {
         super.viewDidLoad()
         
         for button in numbersButton {
-            button.layer.borderColor = UIColor.gray.cgColor
-            button.layer.borderWidth = 0.5
-            button.layer.cornerRadius = 5
+            button.backgroundColor = UIColor.lightGray
+            button.tintColor = .white
+            button.layer.cornerRadius = button.frame.height / 2
         }
         productPickerView.delegate = self
         productPickerView.dataSource = self

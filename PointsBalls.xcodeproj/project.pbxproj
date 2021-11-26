@@ -18,7 +18,7 @@
 		D734BE902740545E007BC05A /* DataModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D734BE8E2740545E007BC05A /* DataModels.xcdatamodeld */; };
 		D734BE9527405B30007BC05A /* ScoresData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734BE9327405B30007BC05A /* ScoresData+CoreDataClass.swift */; };
 		D734BE9627405B30007BC05A /* ScoresData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734BE9427405B30007BC05A /* ScoresData+CoreDataProperties.swift */; };
-		D738A7D027405F2E00C81C30 /* AllDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D738A7CF27405F2E00C81C30 /* AllDataViewController.swift */; };
+		D7D2A0F52751300A001522FB /* StartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2A0F42751300A001522FB /* StartedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		D734BE8F2740545E007BC05A /* DataModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModels.xcdatamodel; sourceTree = "<group>"; };
 		D734BE9327405B30007BC05A /* ScoresData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoresData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D734BE9427405B30007BC05A /* ScoresData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoresData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D738A7CF27405F2E00C81C30 /* AllDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDataViewController.swift; sourceTree = "<group>"; };
+		D7D2A0F42751300A001522FB /* StartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 				D7340772273FC5E500266E60 /* SceneDelegate.swift */,
 				D7340774273FC5E500266E60 /* CalculateViewController.swift */,
 				D7340784273FFA4100266E60 /* DetailViewController.swift */,
+				D7D2A0F42751300A001522FB /* StartedViewController.swift */,
 				D7340786273FFE3700266E60 /* Model.swift */,
 				D7340776273FC5E500266E60 /* Main.storyboard */,
-				D738A7CF27405F2E00C81C30 /* AllDataViewController.swift */,
 				D7340779273FC5E600266E60 /* Assets.xcassets */,
 				D734077B273FC5E600266E60 /* LaunchScreen.storyboard */,
 				D734077E273FC5E600266E60 /* Info.plist */,
@@ -156,10 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D2A0F52751300A001522FB /* StartedViewController.swift in Sources */,
 				D7340787273FFE3700266E60 /* Model.swift in Sources */,
 				D734BE9527405B30007BC05A /* ScoresData+CoreDataClass.swift in Sources */,
 				D734BE9627405B30007BC05A /* ScoresData+CoreDataProperties.swift in Sources */,
-				D738A7D027405F2E00C81C30 /* AllDataViewController.swift in Sources */,
 				D734BE902740545E007BC05A /* DataModels.xcdatamodeld in Sources */,
 				D7340775273FC5E500266E60 /* CalculateViewController.swift in Sources */,
 				D7340771273FC5E500266E60 /* AppDelegate.swift in Sources */,
