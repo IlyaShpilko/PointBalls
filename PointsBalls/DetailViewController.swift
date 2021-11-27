@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
     // MARK: - Life Cycle View Controller
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .clear
         
         productLabel.text = product
         priceLabel.text = price

@@ -9,7 +9,6 @@ import UIKit
 
 class CalculateViewController: UIViewController {
     
-    // FIXME: - Сумма меньше 1 не должна проходить
     // TODO: - Подсчитывать общие количество баллов
     // TODO: - Экран всех баллов
     @IBOutlet weak var productPickerView: UIPickerView!
@@ -28,10 +27,11 @@ class CalculateViewController: UIViewController {
         super.viewDidLoad()
         
         for button in numbersButton {
-            button.backgroundColor = UIColor.lightGray
+            button.backgroundColor = UIColor.gray
             button.tintColor = .white
             button.layer.cornerRadius = button.frame.height / 2
         }
+
         productPickerView.delegate = self
         productPickerView.dataSource = self
     }
@@ -50,16 +50,19 @@ class CalculateViewController: UIViewController {
         textTF += string
         
         priceTextField.text! += textTF
+        changeEnableButtons(true)
     }
     
     @IBAction func removeButton(_ sender: UIButton) {
         if !priceTextField.text!.isEmpty {
-            
             if priceTextField.text?.last == "," {
                 isComma = false
             }
-            
             priceTextField.text?.removeLast()
+        }
+
+        if priceTextField.text!.isEmpty {
+            changeEnableButtons(false)
         }
     }
     
@@ -68,12 +71,20 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "Detail" {
             let vc = segue.destination as! DetailViewController
             let price = priceTextField.text!
-            
-            vc.price = price
+
+            vc.price = price + " рублей"
             vc.product = componentName
             vc.score = model.resultScore(productName: componentName, price: price)
         }
     }
+    
+    // MARK: - Helper Methods
+    private func changeEnableButtons(_ bool: Bool) {
+        for button in unavailableButtos {
+            button.isEnabled = bool
+        }
+    }
+    
 }
 
     // MARK: - Picker View
@@ -97,8 +108,9 @@ extension CalculateViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         componentName = namesProductsArray[row]
     }
-}
-
-extension CalculateViewController: UITextFieldDelegate {
     
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+
+        return NSAttributedString(string: namesProductsArray[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+    }
 }

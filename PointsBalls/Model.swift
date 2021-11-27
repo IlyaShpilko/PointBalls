@@ -15,7 +15,8 @@ class HelperModel {
                                   ["0.9", "1.2", "2.5", "3.5", "4.0"],
                                   ["1.0", "1.3", "2.8", "3.8", "4.5"]]
         
-        guard let sum = Int(sum) else { return ""}
+        guard let float = Float(sum) else { return "" }
+        let sum = Int(round(float))
         
         switch name {
         case "POS A": firstIndex = 0

@@ -12,7 +12,6 @@
 		D7340775273FC5E500266E60 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7340774273FC5E500266E60 /* CalculateViewController.swift */; };
 		D7340778273FC5E500266E60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7340776273FC5E500266E60 /* Main.storyboard */; };
 		D734077A273FC5E600266E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7340779273FC5E600266E60 /* Assets.xcassets */; };
-		D734077D273FC5E600266E60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D734077B273FC5E600266E60 /* LaunchScreen.storyboard */; };
 		D7340785273FFA4100266E60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7340784273FFA4100266E60 /* DetailViewController.swift */; };
 		D7340787273FFE3700266E60 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7340786273FFE3700266E60 /* Model.swift */; };
 		D734BE902740545E007BC05A /* DataModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D734BE8E2740545E007BC05A /* DataModels.xcdatamodeld */; };
@@ -28,7 +27,6 @@
 		D7340774273FC5E500266E60 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		D7340777273FC5E500266E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7340779273FC5E600266E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D734077C273FC5E600266E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D734077E273FC5E600266E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7340784273FFA4100266E60 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D7340786273FFE3700266E60 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				D7340786273FFE3700266E60 /* Model.swift */,
 				D7340776273FC5E500266E60 /* Main.storyboard */,
 				D7340779273FC5E600266E60 /* Assets.xcassets */,
-				D734077B273FC5E600266E60 /* LaunchScreen.storyboard */,
 				D734077E273FC5E600266E60 /* Info.plist */,
 				D734BE8E2740545E007BC05A /* DataModels.xcdatamodeld */,
 				D734BE9327405B30007BC05A /* ScoresData+CoreDataClass.swift */,
@@ -143,7 +140,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D734077D273FC5E600266E60 /* LaunchScreen.storyboard in Resources */,
 				D734077A273FC5E600266E60 /* Assets.xcassets in Resources */,
 				D7340778273FC5E500266E60 /* Main.storyboard in Resources */,
 			);
@@ -177,14 +173,6 @@
 				D7340777273FC5E500266E60 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D734077B273FC5E600266E60 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D734077C273FC5E600266E60 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -316,8 +304,9 @@
 				DEVELOPMENT_TEAM = VCAMR575TC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PointsBalls/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Point Balls";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -344,8 +333,9 @@
 				DEVELOPMENT_TEAM = VCAMR575TC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PointsBalls/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Point Balls";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
