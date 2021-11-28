@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HelperModel {    
+class HelperModel {
     func resultScore(productName name: String, price sum: String) -> String {
         var firstIndex = 0
         var secondIndex = 0
@@ -15,8 +15,7 @@ class HelperModel {
                                   ["0.9", "1.2", "2.5", "3.5", "4.0"],
                                   ["1.0", "1.3", "2.8", "3.8", "4.5"]]
         
-        guard let float = Float(sum) else { return "" }
-        let sum = Int(round(float))
+        let sum = stringConvertDouble(sum)
         
         switch name {
         case "POS A": firstIndex = 0
@@ -35,5 +34,20 @@ class HelperModel {
         }
         
         return namesProductsArray[firstIndex][secondIndex]
+    }
+    
+    private func stringConvertDouble(_ string: String) -> Double {
+        if !string.contains(",") { return Double(string) ?? 0.0 }
+        
+        var returnString = ""
+        
+        for element in string {
+            if element == "," {
+                returnString.append(".")
+            }
+            returnString.append(element)
+        }
+        
+        return Double(returnString) ?? 0.0
     }
 }
